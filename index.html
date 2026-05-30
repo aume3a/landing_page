@@ -1,17 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://dizord.com">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.location.href = "https://dizord.com";
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <title>Loading...</title>
+    <meta name="description" content="Please wait while we redirect you to the destination.">
+
+    <noscript>
+        <meta http-equiv="refresh"
+            content="0; url=https://www.google.com/search?q=Dizord+-+Find+Active+Discord+Servers+&+Communities">
+    </noscript>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .loader-container {
+            text-align: center;
+        }
+
+        .spinner {
+            border: 4px solid #e5e5e5;
+            border-top: 4px solid #5865F2;
+            /* Discord type color */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <p>Redirecting to our new site... If nothing happens, <a href="https://dizord.com">click here</a>.</p>
+
+    <div class="loader-container">
+        <div class="spinner"></div>
+        <p>Redirecting securely...</p>
+    </div>
+
+    <script>
+        // আপনার সার্চ লিংকগুলোর তালিকা
+        const redirectLinks = [
+            "https://www.google.com/search?q=Best+18+++Discord+Servers+2026+dizord.com",
+            "https://www.google.com/search?q=Find+&+Join+Manga+Discord+Servers+to+join+dizord.com",
+            "https://www.google.com/search?q=Find+&+Join+LGBT+Discord+Servers+to+join+dizord.com",
+            "https://www.google.com/search?q=Roleplay+server+listing+site+dizord.com",
+            "https://www.google.com/search?q=Find+&+Join+Anime+Discord+Servers+to+join+dizord.com",
+            "https://www.google.com/search?q=FURRY+server+listing+site+dizord.com",
+            "https://www.google.com/search?q=Find+&+Join+Nsfw+Discord+Servers+to+join+dizord.com",
+            "https://www.google.com/search?q=Best+18+++Discord+Servers+2026+dizord.com",
+            "https://www.google.com/search?q=NUDES+server+listing+site+dizord.com",
+        ];
+
+        // র‍্যান্ডমলি একটি লিংক সিলেক্ট করা
+        const randomLink = redirectLinks[Math.floor(Math.random() * redirectLinks.length)];
+
+        // পেজ লোড হওয়ার সাথে সাথেই (০.১ সেকেন্ডে) রিডাইরেক্ট করে দেবে
+        setTimeout(function () {
+            window.location.replace(randomLink);
+        }, 100); 
+    </script>
+
 </body>
 
 </html>
