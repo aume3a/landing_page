@@ -10188,3 +10188,54 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* No-JS overrides */
+.js-fullheight,
+.owl-carousel.home-slider,
+.owl-carousel.home-slider .slider-item,
+.owl-carousel.home-slider .slider-item .slider-text {
+  min-height: 100vh;
+  height: 100vh; }
+
+.owl-carousel.home-slider {
+  position: relative;
+  overflow: hidden; }
+
+.owl-carousel.home-slider .slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+.owl-carousel.home-slider .slider-item:nth-child(1) {
+  animation-name: heroSlideFade1; }
+
+.owl-carousel.home-slider .slider-item:nth-child(2) {
+  animation-name: heroSlideFade2; }
+
+@keyframes heroSlideFade1 {
+  0%, 45% { opacity: 1; }
+  50%, 100% { opacity: 0; } }
+
+@keyframes heroSlideFade2 {
+  0%, 45% { opacity: 0; }
+  50%, 95% { opacity: 1; }
+  100% { opacity: 0; } }
+
+.ftco-animate {
+  opacity: 1;
+  visibility: visible; }
+
+.nav-toggle-input {
+  display: none; }
+
+@media (max-width: 991.98px) {
+  .nav-toggle-input:checked ~ .navbar-collapse {
+    display: block !important; } }
+
+#ftco-loader {
+  display: none !important; }

@@ -7,18 +7,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap"
-		rel="stylesheet">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,10 +19,10 @@
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">a<span>v</span>o</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle-input" hidden>
+			<label class="navbar-toggler" for="nav-toggle" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span> Menu
+			</label>
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
@@ -148,160 +140,135 @@
 
 
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
+	<script>
+		/* Senexia Link */
+		const LINKS = {
+			US: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			GB: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			DE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+
+			NO: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			AU: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			CH: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			DK: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			SE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
 
 
-	    <script>
-        /* Senexia Link */
-        const LINKS = {
-            US: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            GB: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            DE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-
-            NO: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            AU: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            CH: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            DK: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            SE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-
-
-            BE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            NZ: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            AT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            CA: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            HU: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            NL: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            CZ: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            FI: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            FR: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            IT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            IE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            SI: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
-            LU: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			BE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			NZ: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			AT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			CA: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			HU: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			NL: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			CZ: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			FI: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			FR: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			IT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			IE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			SI: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
+			LU: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215649",
 
 
-            RO: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            PL: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            PT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            SK: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            GR: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            BG: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            HR: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            LT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            LV: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            EE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            CO: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            PE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            JP: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            IL: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
-            EG: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			RO: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			PL: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			PT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			SK: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			GR: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			BG: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			HR: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			LT: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			LV: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			EE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			CO: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			PE: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			JP: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			IL: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
+			EG: "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648",
 
-        };
-
-
-        const FALLBACK_LINK = "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648";
-
-        /* ========= DELAY ========= */
-        const CLICK_DELAY_MIN = 200;
-        const CLICK_DELAY_MAX = 500;
-        const GEO_WAIT_MAX = 1200;
-
-        /* ========= GEO STATE ========= */
-        let GEO_COUNTRY = null;
-        let GEO_READY = false;
-        let IS_VPN = false;
-
-        /* ========= GEO PROMISE ========= */
-        let geoPromiseResolve;
-        const geoPromise = new Promise(res => { geoPromiseResolve = res; });
-
-        /* ========= PRE-DETECT GEO ========= */
-        async function preDetectGeo() {
-            try {
-
-                const res = await fetch("https://ipinfo.io/json", { cache: "no-store" });
-                const d = await res.json();
-
-                if (d && d.country) {
-                    GEO_COUNTRY = d.country.toUpperCase();
-                }
-
-                // ipinfo free 
-                IS_VPN = false;
-
-            } catch (e) {
-                // silent
-            } finally {
-                GEO_READY = true;
-                geoPromiseResolve();
-                console.log("PAGE LOAD GEO:",
-                    "COUNTRY =", GEO_COUNTRY,
-                    "VPN =", IS_VPN
-                );
-            }
-        }
-
-        /* page load geo fetch*/
-        preDetectGeo();
-
-        /* ========= CLICK ROUTE ========= */
-        async function routeUser() {
-
-            // geo ready  wait 
-            if (!GEO_READY) {
-                await Promise.race([
-                    geoPromise,
-                    new Promise(r => setTimeout(r, GEO_WAIT_MAX))
-                ]);
-            }
-
-            const country = GEO_COUNTRY;
-
-            let target = FALLBACK_LINK;
-
-            if (IS_VPN === true) {
-                target = FALLBACK_LINK;
-            }
-            else if (country && LINKS[country]) {
-                target = LINKS[country];
-            }
-
-            const delay =
-                CLICK_DELAY_MIN +
-                Math.floor(Math.random() * (CLICK_DELAY_MAX - CLICK_DELAY_MIN));
-
-            setTimeout(() => {
-
-                /* ===== TEST PURPOSE (console) ===== */
+		};
 
 
-                window.location.href = target;
+		const FALLBACK_LINK = "https://bgeqbv.sereneloves.com/?utm_source=da57dc555e50572d&ban=other&j1=1&s1=175893&s2=2215648";
 
-            }, delay);
-        }
-    </script>
+		/* ========= DELAY ========= */
+		const CLICK_DELAY_MIN = 200;
+		const CLICK_DELAY_MAX = 500;
+		const GEO_WAIT_MAX = 1200;
+
+		/* ========= GEO STATE ========= */
+		let GEO_COUNTRY = null;
+		let GEO_READY = false;
+		let IS_VPN = false;
+
+		/* ========= GEO PROMISE ========= */
+		let geoPromiseResolve;
+		const geoPromise = new Promise(res => { geoPromiseResolve = res; });
+
+		/* ========= PRE-DETECT GEO ========= */
+		async function preDetectGeo() {
+			try {
+
+				const res = await fetch("https://ipinfo.io/json", { cache: "no-store" });
+				const d = await res.json();
+
+				if (d && d.country) {
+					GEO_COUNTRY = d.country.toUpperCase();
+				}
+
+				// ipinfo free 
+				IS_VPN = false;
+
+			} catch (e) {
+				// silent
+			} finally {
+				GEO_READY = true;
+				geoPromiseResolve();
+				console.log("PAGE LOAD GEO:",
+					"COUNTRY =", GEO_COUNTRY,
+					"VPN =", IS_VPN
+				);
+			}
+		}
+
+		/* page load geo fetch*/
+		preDetectGeo();
+
+		/* ========= CLICK ROUTE ========= */
+		async function routeUser() {
+
+			// geo ready  wait 
+			if (!GEO_READY) {
+				await Promise.race([
+					geoPromise,
+					new Promise(r => setTimeout(r, GEO_WAIT_MAX))
+				]);
+			}
+
+			const country = GEO_COUNTRY;
+
+			let target = FALLBACK_LINK;
+
+			if (IS_VPN === true) {
+				target = FALLBACK_LINK;
+			}
+			else if (country && LINKS[country]) {
+				target = LINKS[country];
+			}
+
+			const delay =
+				CLICK_DELAY_MIN +
+				Math.floor(Math.random() * (CLICK_DELAY_MAX - CLICK_DELAY_MIN));
+
+			setTimeout(() => {
+
+				/* ===== TEST PURPOSE (console) ===== */
 
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<script src="js/google-map.js"></script>
-	<script src="js/main.js"></script>
+				window.location.href = target;
+
+			}, delay);
+		}
+	</script>
 
 </body>
 
